@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --purple-primary: #6b46c1;
+  --purple-dark: #553c9a;
+  --purple-light: #9f7aea;
+  --accent: #ed64a6;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --border: #2d3748;
+  --gray-dark: #1a1a1a;
+  --gray-light: #4a4a4a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-purple-primary: var(--purple-primary);
+  --color-purple-dark: var(--purple-dark);
+  --color-gray-dark: var(--gray-dark);
+  --color-gray-light: var(--gray-light);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[--purple-primary] text-[--text-primary] px-6 py-3 rounded-md hover:bg-[--purple-light] hover:text-[--background] transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .card {
+    @apply bg-[--gray-dark] p-6 rounded-xl shadow-md border border-[--border] hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-12 text-[--text-primary] relative;
+  }
+  
+  .section-title::after {
+    @apply content-[''] block w-20 h-1 bg-[--accent] mx-auto mt-4;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[--purple-light] to-[--accent];
+  }
+}
