@@ -116,16 +116,16 @@ All layouts use Tailwind’s responsive utilities (`md:`, `lg:`, etc.) for seaml
 ---
 
 ## 📸 **Demo**
-
-> _Add a link to your hosted site and a screen recording here._
+hosted site:  [https://coding-jr-landing-page.vercel.app/](https://coding-jr-landing-page.vercel.app/)
+[screen recording here._](https://www.loom.com/share/0db889434c2142ac908f6dc620587f66?sid=ed2f60e5-9a65-4e7e-a438-915b7d15f0fb)
 
 ---
 
 ## 📞 **Contact**
 
 For questions, reach out at:  
-**vikas@codingjr.online**  
-**Phone:** [Your Phone Number]
+**priyanshusingh00004@gmail.com**  
+**Phone:** 9971196062, 9560728495
 
 ---
 
